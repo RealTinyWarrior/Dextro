@@ -5,10 +5,10 @@ server.all("/", (req, res) => {
     res.send("Bot is running!");
 });
 
-function keepAlive() {
+function alive() {
     server.listen(3000, () => {
         console.log("Bot is ready, listening to port 3000!");
     });
 }
 
-module.exports = keepAlive;
+module.exports = alive;

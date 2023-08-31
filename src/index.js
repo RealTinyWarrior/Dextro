@@ -1,6 +1,6 @@
 const { BotIntents, prefix } = require("./data");
-const keepAlive = require("./server");
 const Discord = require("discord.js");
+const alive = require("./server");
 
 require("dotenv").config();
 
@@ -17,5 +17,5 @@ client.on("messageCreate", (message) => {
     const cmd = message.content.slice(2).split(" ");
 });
 
-keepAlive();
+alive();
 client.login(process.env.TOKEN);
