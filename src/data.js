@@ -1,6 +1,6 @@
 const { GatewayIntentBits } = require("discord.js");
 
-exports.prefix = "$";
+exports.prefix = "+=";
 
 exports.BotIntents = [
     GatewayIntentBits.Guilds,
